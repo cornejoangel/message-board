@@ -1,0 +1,11 @@
+extends layout 
+
+block content
+  h1 Heres da form
+  <form method="POST" action="/new">
+    input(type="text" name="user" placeholder="author of message")
+    textarea(name="text" placeholder="message")
+    input(type="submit" name="submit" value="Add Message")
+  </form>
+
+  a(href="/") return to board (without submitting a message)

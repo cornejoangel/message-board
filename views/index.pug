@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  ul
+  - for (let i = 0; i < messages.length; i += 1) 
+    li 
+      p USER: #{messages[i].user}
+      p #{messages[i].text}
+      p DATE: #{messages[i].added}
+  
+  a(href="/new") add a new message
